@@ -1,0 +1,60 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+    background-color: aquamarine;
+}
+
+div {
+    font-size: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    grid-template-areas:
+        "key keyCode code"
+        "keyValue keyCodeValue codeValue ";
+}
+
+#key {
+    text-align: center;
+    border: 2px black solid;
+    grid-area: key;
+}
+
+#keyValue {
+    text-align: center;
+    border: 2px black solid;
+    grid-area: keyValue;
+}
+
+#keyCode {
+    text-align: center;
+    border: 2px black solid;
+    grid-area: keyCode;
+}
+
+#keyCodeValue {
+    text-align: center;
+    border: 2px black solid;
+    grid-area: keyCodeValue;
+}
+
+#code {
+    text-align: center;
+    border: 2px black solid;
+    grid-area: code;
+}
+
+#codeValue {
+    text-align: center;
+    border: 2px black solid;
+    grid-area: codeValue;
+}
